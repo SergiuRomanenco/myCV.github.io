@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .containerCV{
+            display: grid;
+            place-items: center;
+            width: 100%;
+            height: auto;
+            background-color: #484848;
+        }
+
+        .numePrenume{
+            display: flex;
+            align-items: center;
+            width: 800px;
+            height: 100px;
+            margin-top: 30px;
+            position: absolute;
+            background-color: #548ca8;
+        }
+        .name{
+            position: relative;
+            left: 20px;
+        }
+        .prgNume{
+            color: white;
+            font-size: 30px;
+        }
+
+        .myPhoto{
+            display: grid;
+            place-items: center;
+            position: absolute;
+            right: 70px;
+            width: 145px;
+            height: 145px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+
+        .div-img{
+            width: 135px;
+            height: 135px;
+            border-radius: 50%;
+            background-image: url(./myPhoto.jpg.jpg);
+            background-size: cover;
+        }
+
+        .cv{
+            display: flex;
+            width: 800px;
+            height: 1100px;
+        }
+
+        .details{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 250px;
+            background-color: #2b3743;
+            color: #fff;
+        }
+
+        .contact{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 200px;
+            height: 240px;
+            border-bottom: 2px solid #fff;
+            margin-top: 150px;
+        }
+
+        .languages{
+            margin-top: 20px;
+            width: 200px;
+            border-bottom: 2px solid #fff;
+        }
+        .skills{
+            width: 200px;
+            padding: 20px 0px 30px 0px;
+            border-bottom: 2px solid #fff;
+        }
+
+        .progress{
+            width: 200px;
+            height: 12px;
+            background-color: #f1f1f1;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        .html{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 185px;
+            height: 12px;
+            background-color: #355691;
+            border-radius: 10px;
+        }
+        .css{
+            width: 170px;
+        }
+        .javascript{
+            width: 160px;
+        }
+        .photoshop{
+            width: 153px;
+        }
+
+        .tools{
+            width: 200px;
+            padding: 20px 0px 20px 0px;
+            border-bottom: 2px solid #fff;
+        }
+
+        .myProjects{
+            width: 200px;
+            padding: 20px 0px 30px 0px;
+            border-bottom: 2px solid #fff;
+        }
+        .myProjects a{
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid #fff;
+        }
+
+        .description{
+            height: 100%;
+            width: 550px;
+            background-color: #f1f1f1;
+            padding-top: 160px;
+        }
+
+        .description_item{
+            border-top: 1px solid black;
+            padding-top: 10px;
+            margin: 0px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containerCV">
+        <div class="cv">
+            <!--Name and image-->
+            <div class="numePrenume">
+                <div class="name">
+                    <p class="prgNume">Romanenco Sergiu</p>
+                    <p style="color: white; font-size: 20px;">Front End Developer</p>
+                </div>
+                <div class="myPhoto">
+                    <div class="div-img"></div>
+                </div>
+            </div> <!--/numePrenume-->
+            <!--Details-->
+            <div class="details">
+                <div class="contact" style="padding-bottom: 20px;">
+                    <h3 style="padding-bottom: 10px;"><i class="fa-solid fa-user"></i>&nbsp;&nbsp; Personal</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>&nbsp; Iași, Romania</p>
+                    <p><i class="fa-solid fa-phone"></i>&nbsp; +40 738 245 363</p>
+                    <p><i class="fa-brands fa-telegram"></i>&nbsp; <a href="https://t.me/sergiu_r02" target="_blank" style="color: #fff; text-decoration: none;">@sergiu_r02</a></p>
+                    <p><i class="fa-solid fa-envelope"></i>&nbsp; <a href="" style="color: #fff; text-decoration: none;">romanenco.sergiu@mail.ru</a></p>
+                    <p><i class="fa-brands fa-github"></i>&nbsp; <a href="https://github.com/SergiuRomanenco" target="_blank" style="color: #fff; text-decoration: none; border-bottom: 1px solid #fff;">sergiuromanenco_GitHub</a></p>
+                    <p><i class="fa-brands fa-linkedin"></i>&nbsp; <a href="https://www.linkedin.com/in/sergiu-romanenco-505724269/" target="_blank" style="color: #fff; text-decoration: none; border-bottom: 1px solid #fff;">SergiuRomanenco</a></p>
+                </div>
+                <div class="languages">
+                    <h3><i class="fa-solid fa-earth-americas"></i>&nbsp;&nbsp; Languages</h3>
+                    <ul style="padding: 15px 0px 20px 30px">
+                        <li type="disc">English - B1 Intermediate</li>
+                        <li type="disc">Russian - native</li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <h3 style="padding-bottom: 15px;"><i class="fa fa-asterisk fa-fw"></i>&nbsp;&nbsp; Technical Skills</h3>
+                    <p>HTML</p>
+                    <div class="progress">
+                        <div class="html">95%</div>
+                    </div>
+                    <p style="padding-top: 10px;">CSS</p>
+                    <div class="progress">
+                        <div class="html css">85%</div>
+                    </div>
+                    <p style="padding-top: 10px;">JavaScript</p>
+                    <div class="progress">
+                        <div class="html javascript">80%</div>
+                    </div>
+                    <p style="padding-top: 10px;">Adobe Photoshop</p>
+                    <div class="progress">
+                        <div class="html photoshop">75%</div>
+                    </div>
+                </div>
+                <div class="tools">
+                    <h3><i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;&nbsp; Development tools</h3>
+                    <ul style="padding: 15px 0px 0px 35px;">
+                        <li>Visual Studio Code 2022</li>
+                        <li>Eclipse IDE</li>
+                        <li>Notepad++</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <div class="myProjects">
+                    <h3 style="padding-bottom: 15px;"><i class="fa-solid fa-folder-open"></i>&nbsp;&nbsp;  My Projects</h3>
+                    <p style="padding: 0px 0px 6px 6px;">
+                        <i class="fa-solid fa-earth-americas" style="font-size: 12px;"></i>
+                        <a href="https://sergiuromanenco.github.io/accesoriesProjectAV.github.io/Home/indexHome" target="_blank">https://accesoriess.github.io</a>
+                    </p>
+                    <p style="padding-left: 6px;">
+                        <i class="fa-solid fa-earth-americas" style="font-size: 12px;"></i>
+                        <a href="https://sergiuromanenco.github.io/eyebrows.github.io/Home/indexHome" target="_blank">https://eyebrows.github.io</a>
+                    </p>
+                </div>
+                <div class="interests"></div>
+            </div> <!--/details-->
+            <!--Description-->
+            <div class="description">
+                <h3 style="padding: 0px 0px 10px 10px;">Objective</h3>
+                <div class="description_item">
+                    <p>A junior FrontEnd Developer dedicated and oriented in the creation, improvement and development interactive websites, in a dynamic and challenging work environment.</p>
+                </div>
+                <h3 style="padding: 20px 0px 10px 10px;">Education</h3>
+                <div class="description_item">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p><i class="fa-solid fa-circle-dot" style="font-size: 13px;"></i>&nbsp; Gheorghe Asachi Technical University of Iași</p>
+                        <p style="color: rgb(76, 76, 76);">2021 - present</p>
+                    </div>
+                    <p style="padding: 5px 0px 0px 22px; max-width: 400px;"><b>Faculty:</b> Electrical Engineering, Energetics and Applied Informatics</p>
+                    <p style="padding: 5px 0px 0px 22px; max-width: 400px;"><b>Speciality:</b> Electrical engineering</p>
+                    <p style="padding: 5px 0px 0px 22px; max-width: 400px;">2nd year license</p>
+                </div>
+                <h3 style="padding: 15px 0px 10px 10px;">Courses</h3>
+                <div class="description_item">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p><i class="fa-solid fa-circle-dot" style="font-size: 13px;"></i>&nbsp; Azimut Vision - Accredited IT Courses, Cluj-Napoca</p>
+                        <p style="color: rgb(76, 76, 76);">Nov 2022 - Apr 2023</p>
+                    </div>
+                    <p style="padding: 5px 0px 0px 22px;"><b>Speciality:</b> Front-End Developer</p>
+                </div>
+                <h3 style="padding: 20px 0px 10px 10px;">Soft Skills</h3>
+                <div class="description_item">
+                    <ul>
+                        <li>Learn fast</li>
+                        <li>Think logically</li>
+                        <li>Accept constructive criticism</li>
+                        <li>Responsibility and punctuality</li>
+                        <li>Take the initiative</li>
+                        <li>Communicate constructively even in conflict situations</li>
+                        <li>Integration in projects, their development and problem solving</li>
+                        <li>Curiosity and ability to always learn new things</li>
+                    </ul>
+                </div>
+                <h3 style="padding: 20px 0px 10px 10px;">Experience</h3>
+                <div class="description_item">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p><i class="fa-solid fa-circle-dot" style="font-size: 13px;"></i>&nbsp; Student at the Azimut Vision - Accredited IT Courses</p>
+                        <p style="color: rgb(76, 76, 76);">Nov 2022 - Apr 2023</p>
+                    </div>
+                    <p style="padding: 10px 15px 0px 15px;">- During the courses, I put HTML/CSS properties into practice, creating modern elements for websites, I solved logic exercises in JavaScript, created different animations with GSAP, also made web pages, using new properties, animations, transitions for a modern design.</p>
+                </div>
+                <h3 style="padding: 20px 0px 10px 10px;">Interests</h3>
+                <div class="description_item">
+                    <p style="padding: 0px 15px;">I like to be aware of new technologies and new updates, develop my thinking skills, exploring informative websites and learn new projects, additionally, I study on my own every day through sources - Youtube, telegram channels of IT communities, and I'm also able and willing to learn new skills.</p>
+                </div>
+            </div> <!--\description-->
+        </div> <!--/cv (all cv)-->
+    </div> <!--/containerCV-->
+</body>
+</html>
